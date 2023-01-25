@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_cap</title>
+</head>
+<body>
+    <center>
+        <h1>Display_cap</h1>
+        <table border="3px">
+            <tr>
+                <th>Country_Name</th>
+                <th>Cap_name</th>
+                <th>num_states</th>
+            </tr>
+            {% for i in cap %}
+            <tr>
+                <td>{{ i.Country_Name }}</td>
+                <td>{{ i.Cap_name }}</td>
+                <td>{{ i.num_states }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>

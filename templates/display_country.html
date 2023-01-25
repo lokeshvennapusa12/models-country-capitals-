@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display_country</title>
+</head>
+<body>
+    <center>
+        <h1>Display_country</h1>
+        <table border="3px">
+            <tr>
+                <th>Country_Name</th>
+            </tr>
+            {% for c in country %}
+            <tr>
+                <td>{{ c.Country_Name }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
